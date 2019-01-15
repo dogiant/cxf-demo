@@ -7,11 +7,11 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="clientFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
-		<property name="serviceClass" value="com.dogiant.demo.CXFDemo" />
-		<property name="address" value="http://localhost:8080/services/cxfdemo" />
+		<property name="serviceClass" value="com.dogiant.demo.ws.HelloService" />
+		<property name="address" value="http://localhost:8080/services/helloService" />
 	</bean>
 
-	<bean id="client" class="com.dogiant.demo.CXFDemo" factory-bean="clientFactory"
-		factory-method="create" />
+	<bean id="client" class="com.dogiant.demo.ws.HelloService" factory-bean="clientFactory"
+          factory-method="create" />
 
 </beans>

@@ -1,6 +1,8 @@
 ---
 title: JAX-WS与JAX-RS的区别
 date: "2017-02-07"
+<cxf.version>2.2.4</cxf.version>
+环境 jdk1.7+ 
 ---
 
 一、名称概述  

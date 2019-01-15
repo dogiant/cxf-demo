@@ -10,7 +10,6 @@ import com.dogiant.demo.rs.domain.Person;
 public class TrackerServiceImpl implements TrackerService {
 
     public Person get(String id) {
-        // TODO Auto-generated method stub
     	Person p = new Person();
     	p.setId(330726197811021711L);
     	p.setName("john");
