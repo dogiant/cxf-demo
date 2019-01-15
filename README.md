@@ -3,16 +3,16 @@ title: JAX-WS与JAX-RS的区别
 date: "2017-02-07"
 ---
 
-####一、名称概述
-JAX-WS：全称是JavaTM API forXML-Based Web Services
-JAX-RS :全称是 JavaTM API forRESTful Web Services
+一、名称概述
+JAX-WS：全称是JavaTM API forXML-Based Web Services  
+JAX-RS :全称是 JavaTM API forRESTful Web Services  
 
 关于JAX-WS与JAX-RS两者是不同风格的[SOA](https://www.martinfowler.com/bliki/ServiceOrientedAmbiguity.html)架构。
 前者以动词为中心，指定的是每次执行函数。
 而后者以名词为中心，每次执行的时候指的是资源。
 
-####二、JAX-WS与JAX-RS的区别
-#####JAX-RS
+二、JAX-WS与JAX-RS的区别  
+JAX-RS
 
 JAX-RS是JAVA EE6 引入的。
 
@@ -36,7 +36,7 @@ JAX-RS提供了一些标注将一个资源类，一个POJO Java类，封装为We
 
 基于JAX-RS实现的框架有Jersey，RESTEasy等。这两个框架创建的应用可以很方便地部署到Servlet 容器中，比如Tomcat，JBoss等。值得一提的是RESTEasy是由JBoss公司开发的，所以将用RESTEasy框架实现的应用部署到JBoss服务器上，可以实现很多额外的功能。
 
-#####JAX-WS
+JAX-WS
 JAX-WS规范是一组XML web services的JAVA API，JAX-WS允许开发者可以选择RPC-oriented或者message-oriented 来实现自己的web services。
 
 在 JAX-WS中，一个远程调用可以转换为一个基于XML的协议例如SOAP，在使用JAX-WS过程中，开发者不需要编写任何生成和处理SOAP消息的代码。JAX-WS的运行时实现会将这些API的调用转换成为对应的SOAP消息。
